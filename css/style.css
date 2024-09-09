@@ -87,10 +87,88 @@ section{
     width: 100%;
     height: 500px;
     background-repeat: repeat-x;
+    padding-top: 100px;
 }
-/*...................Trabalhos.......................................*/
+
+.icons{
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons .icon img{
+    width: 115px;
+    padding: 10px;
+}
+
+.txt{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+/*.........................Sem Internet.........................*/
+.txt{
+    width: 850px;
+    margin: 0 auto;
+}
+.txt h6{
+    font-size: 28px;
+    font-weight: 300;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif;/*Baixar a font do google font*/
+    text-align: center;
+    margin-left: 70%;
+}
+
+section2 .trabalhos{
+    width: 100%;
+    height: 100px;
+}
+
+/*Onde fica os textos acima das imagens*/
+.main-head{
+    width: 100%;
+    height: 100px;
+    text-align: center;/*alinha todos os textos ao centro, dentro dessa div*/
+    padding: 0;
+}
+/*Texto "Nosso" em que muda a cor e o tamanho*/
+.main-head h4{
+    font-style: italic;/*Deixa o texto no formato itálico*/
+    color: #e7a920;/*Define a cor do texto*/
+    font-size: 50px;/*Define o tamanho da texto*/
+    margin: 0 auto;/*Define uma margem para o texto*/
+    font-family:'Courier New', Courier, monospace;/*add font*/
+}
+
+/*Texto "Projetos" que estaá como principal*/
+.main-head h1{
+    font-style: italic;/*Deixa o texto no formato itálico*/
+    color: black;/*Define a cor do texto*/
+    font-size: 100px;/*Define o tamanho da texto*/
+    font-family:'Courier New', Courier, monospace;/*add font*/
+    margin: 14px;/*Define uma margem para o texto*/
+}
+
+/*Fica uma espécie de subtítulo*/
+.main-head span{
+    font-style: italic;/*Deixa o texto no formato itálico*/
+    font-size: 25px;/*Define o tamanho da texto*/
+    font-family:'Courier New', Courier, monospace;/*add font*/
+}
+
+/*Fica a imagem (asset) */
+.main-head img{
+    width: 60px;
+    margin: 14px;/*Define uma margem para o texto*/
+}
+/*.........................Trabalhos.........................*/
 
 #Trabalhos{
-background-color: blue;
-
+background-color: blue;/*Define a cor de fundo de algo*/
 }
+
