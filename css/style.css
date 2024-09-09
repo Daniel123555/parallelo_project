@@ -1,174 +1,200 @@
-body {
+body{
     margin: 0;
     padding: 0;
 }
 
-header {
+header{
+    background-color:rgba(210, 154, 29, 1);
     width: 100%;
     height: 720px;
-    background-color: aqua;
     padding-top: 15px;
-    display: flex;
-    flex-direction: row;
     background-image: url(../sources/slidebg1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    flex-direction: row;
 }
 
-nav {
-    min-width: 1200px;
-    max-width: 1400px;
+nav{
     height: 125px;
-    margin: 0 auto 0 auto;
+    width: 1210px;
+    margin: auto;
     background-color: black;
-    float: right;
 }
 
-nav #logo {
-    margin: 15px;
+nav #logo{
+    margin: 23px;
     float: left;
 }
 
-nav #logo img {
+nav #logo img{
     height: 75px;
 }
 
-
 nav ul{
+    width: 19px;
+    height: 75px;
     display: flex;
-    flex-direction: row;
+    margin: 0;
 }
 
-nav ul li {
+nav ul li{
+    display: flex;
+    margin: 0 0 0 40px;
     color: white;
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
     list-style: none;
+    font-family: Montserrat, sans-serif;
+}
+
+nav ul li a{
+    padding: 55px 0 55px 0;
     text-decoration: none;
+    color: inherit;
     float: left;
-    margin: 50px 20px 0px 20px;
 }
 
-nav ul li a {
-    text-decoration: line-through;
-    padding: 25px 20px 25px 0;
-    color: white;
+nav #menu_princiapl{
+    float: right;
 }
 
-nav#menu_principal{
-float: right;
-
-}
-#menu_principal li span{
-font-family: Montserrat, sans-serif;
-font-size: 11px;
-color: rgb(134, 134, 134);
-margin-right: 3px;
-margin-top: 5px;
-float: left;
-}
-#menu_principal li a {
-color: white;
-font-size: 14px;
-text-transform: uppercase;
-text-decoration: none;
-transition: 1s;
+nav #menu_principal span{
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    color: rgb(134,134,134);
+    margin-right: 3px;
+    margin-top: 60px;
+    float: left;
 }
 
-#menu_principal li a:hover{
-    color: #e7a920;
-    transition: 1s;
-    text-decoration: line-through;
+#menu_principal li a{
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
-section{
+.select a, nav ul li a:hover{
+    text-decoration: line-through 2px;
+    color: #E1AB30;
+    transition: 0.2s;
+}
+
+.device-dark{
     background-image: url(../sources/Assets/divider-dark.png);
-    width: 100%;
-    height: 500px;
     background-repeat: repeat-x;
     padding-top: 100px;
 }
 
+section{
+    background-color: rgb(#e7a920);
+}
+
 .icons{
-    width: 400px;
     height: 120px;
+    width: 345px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
     display: flex;
     flex-direction: row;
 }
 
 .icons .icon img{
     width: 115px;
-    padding: 10px;
+    padding: 0 25px 0 0;
 }
 
 .txt{
-    width: 100%;
-    height: 100px;
-    float: left;
-}
-/*.........................Sem Internet.........................*/
-.txt{
-    width: 850px;
+    width: 1000px;
     margin: 0 auto;
 }
+
 .txt h6{
     font-size: 28px;
     font-weight: 300;
     width: 80%;
     display: inline-block;
     line-height: 40px;
-    font-family: 'Roboto Slab', serif;/*Baixar a font do google font*/
+    font-family: 'Roboto Slab', serif; /*mudar a fonte*/
     text-align: center;
-    margin-left: 70%;
+    margin: 0;
+    margin-left: 95px;
+    margin-top: 40px;
+    padding: 0 0 110px 0;
 }
 
-section2 .trabalhos{
+.trabalhos{
+    height: 207px;
     width: 100%;
-    height: 100px;
 }
 
-/*Onde fica os textos acima das imagens*/
-.main-head{
-    width: 100%;
-    height: 100px;
-    text-align: center;/*alinha todos os textos ao centro, dentro dessa div*/
-    padding: 0;
-}
-/*Texto "Nosso" em que muda a cor e o tamanho*/
-.main-head h4{
-    font-style: italic;/*Deixa o texto no formato itálico*/
-    color: #e7a920;/*Define a cor do texto*/
-    font-size: 50px;/*Define o tamanho da texto*/
-    margin: 0 auto;/*Define uma margem para o texto*/
-    font-family:'Courier New', Courier, monospace;/*add font*/
+.cabecalho{
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/*Texto "Projetos" que estaá como principal*/
-.main-head h1{
-    font-style: italic;/*Deixa o texto no formato itálico*/
-    color: black;/*Define a cor do texto*/
-    font-size: 100px;/*Define o tamanho da texto*/
-    font-family:'Courier New', Courier, monospace;/*add font*/
-    margin: 14px;/*Define uma margem para o texto*/
+.trabalhos .cabecalho h2{
+    margin: 0;
 }
 
-/*Fica uma espécie de subtítulo*/
-.main-head span{
-    font-style: italic;/*Deixa o texto no formato itálico*/
-    font-size: 25px;/*Define o tamanho da texto*/
-    font-family:'Courier New', Courier, monospace;/*add font*/
+.trabalhos .cabecalho h2 span{
+    color: #e7a920;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
 
-/*Fica a imagem (asset) */
-.main-head img{
-    width: 60px;
-    margin: 14px;/*Define uma margem para o texto*/
+.trabalhos .cabecalho h2 b{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 85px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
 }
-/*.........................Trabalhos.........................*/
 
+.trabalhos .cabecalho p{
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    margin: 12px 0 0 0;
+}
+
+.trabalhos .mosaico{
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.trabalhos .mosaico .item .plus{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 245px;
+}
+
+.trabalhos .mosaico .item .plus:hover{
+
+}
+
+.trabalhos .mosaico .item{
+    height: 470px;
+    width: 570px;
+    background-image: url(../sources/project-1.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: 1s;
+}
+
+.trabalhos .mosaico .item:hover{
+    background-size: 110%;
+    background-position: center;
+}
+/*-----------------------------------Trabalhos---------------------------------*/
 #Trabalhos{
-background-color: blue;/*Define a cor de fundo de algo*/
+    background-color: blue;
 }
-
